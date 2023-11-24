@@ -1,0 +1,83 @@
+.box{
+    &__img{
+        max-width: 430px;
+
+        img{
+            width: 100%;
+            
+        }
+        @include tablet{
+            max-width: 790px;
+        }
+        @include desktop{
+            max-width: 1168px;
+        }   
+    }
+    @include tablet{
+        max-width: 871px;
+        position: relative;
+    }
+    @include desktop{
+         max-width: 1408px;
+         position: relative;
+    }
+    &__desc{
+        padding: 36px 41px 36px 36px;
+        // border: 2px solid black;
+        background: white;
+        max-width: 430px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            max-width: 528px;
+            position: absolute;
+            top: 229px;
+            left: 343px;
+        }
+        @include desktop{
+            max-width:688px ;
+            position: absolute;
+            top: 86px;
+            left: 720px;
+        }
+
+        h1{
+            font-size: 20px;
+            line-height: 31px;
+            max-width: 205px;
+            @include tablet{
+                font-size: 32px;
+                line-height: 52px;
+                max-width: 315px;
+
+            }
+            @include desktop{
+                font-size: 40px;
+                max-width: 393px;
+            }
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            margin: 20px 0px;
+            max-width: 347px;
+            @include tablet{
+                max-width: 451px;
+                margin: 20px 0px 32px 0px;
+            }
+            @include desktop{
+                font-size: 16px;
+                max-width: 584px;
+                margin: 24px 0px 40px 0px;
+            }
+        }
+        
+        .downIcon{
+            display: flex;
+            gap:24px ;
+        }
+    }
+}

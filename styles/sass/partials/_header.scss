@@ -1,0 +1,62 @@
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+
+
+    &__logo{
+        margin-top: 23px;
+        max-width: 119px;
+    }
+
+    &__navbar-menu{
+        position: absolute;
+        top: 24px;
+        right: 24px;
+
+        @include tablet{
+            opacity: 0;
+        }
+        @include desktop{
+            opacity: 0;
+        }
+    }
+
+    &__navbar{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        list-style: none;
+        text-align: center;
+        // flex-wrap: wrap;
+        gap: 32px;
+        opacity: 0;
+
+        @include tablet{
+            opacity: 1;
+        }
+        @include desktop{
+            opacity: 1;
+        }     
+
+        .btn{
+            color: $header-prim-color;
+            background-color: rgba(255, 255, 255, 0.10);
+        }
+
+        .navbar--items{
+            color: $fade-white;
+
+            &:hover{
+                color: $header-prim-color;
+            }
+        }
+
+        
+    }
+}

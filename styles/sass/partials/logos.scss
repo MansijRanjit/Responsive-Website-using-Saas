@@ -1,0 +1,20 @@
+.logos{
+    background:rgba(255, 255, 255, 0.2) ;
+    &__logItems{
+        // position: fixed;
+        // left: 0;
+        // right:0;
+        // background:rgb(192, 32, 192);
+        display: none;
+
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 28px 24px 44px;
+
+        }
+        @include desktop{
+            padding: 24px 256px 25px 256px;
+        }
+    }
+}

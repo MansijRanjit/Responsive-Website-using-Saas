@@ -1,0 +1,151 @@
+
+.pos{
+    background: $header-bag-color;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom: 100px;
+    gap: 20px;
+
+    @include tablet{
+        padding-top: 54px;
+    }
+    @include desktop{
+        padding-top: 89px;
+    }
+
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        max-width: 400px;
+
+        @include tablet{
+            align-items:start;
+            max-width: 420px;
+        }
+        @include desktop{
+            max-width: 590px;
+        }
+
+
+        h1{
+            max-width:352px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            padding-top: 26px;
+            text-align: center;
+            color: $header-prim-color;
+
+            @include tablet{
+                max-width: 385px;
+                font-size: 36px;
+                text-align: left;
+                line-height: 50px;
+            }
+
+            @include desktop{
+                max-width: 600px;
+                font-size: 56px;
+                line-height: 70px;
+                letter-spacing: -1.12px;
+
+            }
+        }
+
+        p{
+            width: 100%;
+            color: $fade-white;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            margin-top: 8px;
+
+            @include tablet{
+                text-align: left;
+            }
+        }
+
+        .info{
+            margin-top: 24px;
+            font-style: normal;
+            line-height: normal;
+            font-weight: 400px;
+
+            @include tablet{
+                margin-top: 32px;
+            }
+            @include tablet{
+                font-size: 18px;
+            }
+        }
+
+        
+    }
+
+    &__pic{
+        display: flex;
+        margin-left: 200px;
+        position: relative;
+
+        // @include tablet{
+        //         margin-left: 103.8px;
+        //         margin-right: 220px;
+        //     }
+        // @include desktop{
+        //         margin-left: 258.8px;
+        //     }
+        .img1{
+            max-width: 177px;//238px;
+            @include tablet{
+             max-width: 238px;
+            }
+            
+        }
+        .img2{
+            max-width: 292px;
+            position: absolute;
+            top: 198px;
+            right: 87px;
+            // @include tablet{
+            //     //margin-left: 103.8px;
+            //     top: 155px;
+            //     left: 164px;
+            // }
+            // @include desktop{
+            //     margin-left: 258.8px;
+            //     top: 152px;
+            //     left: 193px;
+            // }
+        }
+    
+}
+.stats{
+        display: flex;
+        gap: 20px;
+        font-style: normal;
+     }
+.stats h1{
+        font-size: 20px;
+
+        @include tablet{
+            font-size: 24px;
+        }
+
+        @include desktop{
+            font-size: 32px;
+        }
+    }
+.stats p{
+        font-size: 12px;
+    }
+    @include desktop{
+        font-size: 16px;
+    }
+}

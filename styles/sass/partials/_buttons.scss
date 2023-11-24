@@ -1,0 +1,55 @@
+@mixin posBtnCl{
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+
+  width: 221px;
+  padding: 16px 24px;
+}
+
+.btn{
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    //   default button is medium sized
+    padding: 16px 32px;
+    //   small sized button
+
+    &.small {
+      padding: 8px 16px;
+      line-height: 20px;
+    }
+
+}
+
+.posBtn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 20px;
+    justify-content:  center;
+    @include tablet{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    
+    &__poster-top{
+        @include posBtnCl;
+
+    }
+
+    &__poster-bot{
+      color: $white;
+      border: 1px solid white;
+      background: $header-bag-color;
+      @include posBtnCl;
+
+      @include tablet{
+        max-width: 144px;
+      }
+    }
+    
+
+}

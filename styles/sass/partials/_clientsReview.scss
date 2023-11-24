@@ -1,0 +1,73 @@
+.client-box{
+    display: none;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 245px ;
+        margin-bottom: 50px;
+        // margin: 254px 10px 50px;
+        gap:40px;
+    }
+    .heading{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 52px; 
+      
+    }
+
+    .revCards{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include desktop{
+            gap: 32px;
+        }
+    }
+}
+.revCard{
+    border: 1px solid rgb(209, 194, 194);
+    border-radius: 8px;
+    width: 304px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    // @include desktop{
+    //     width:448px ;
+    // }
+    &__top{
+        margin:29px 21px 19px 24px ;
+    }
+    &__bot{
+        margin: 19px 71px 24px 24px;
+        display: flex;
+        align-items: center;
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+            h1{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+.revCard1{
+    background:linear-gradient(122deg, #5D55FF 0.86%, #4A43E3 100%) ;
+    p{
+        color: $header-para-color;
+    }
+    h1{
+        color: $header-prim-color;
+    }
+}
