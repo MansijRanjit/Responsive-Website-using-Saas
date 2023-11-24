@@ -553,22 +553,49 @@ header {
 }
 .pos__pic {
   display: flex;
-  margin-left: 200px;
-  position: relative;
+  align-items: center;
+  max-width: 378px;
 }
-.pos__pic .img1 {
+.pos__pic .posterBox {
+  width: 378px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (min-width: 768px) {
+  .pos__pic .posterBox {
+    position: relative;
+    display: flex;
+    justify-content: start;
+  }
+}
+.pos__pic .posterBox .img1 {
   max-width: 177px;
 }
 @media screen and (min-width: 768px) {
-  .pos__pic .img1 {
-    max-width: 238px;
+  .pos__pic .posterBox .img1 {
+    max-width: 259px;
   }
 }
-.pos__pic .img2 {
+.pos__pic .posterBox .img2 {
   max-width: 292px;
   position: absolute;
-  top: 198px;
-  right: 87px;
+  top: 190px;
+  right: 86px;
+}
+@media screen and (min-width: 768px) {
+  .pos__pic .posterBox .img2 {
+    position: absolute;
+    top: 6.5rem;
+    left: 7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pos__pic .posterBox .img2 {
+    position: absolute;
+    top: 6.5rem;
+    left: 8.5rem;
+  }
 }
 .pos .stats {
   display: flex;
@@ -598,7 +625,7 @@ header {
 }
 
 .logos {
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #7975c7;
 }
 .logos__logItems {
   display: none;

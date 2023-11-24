@@ -41,7 +41,6 @@
         @include tablet{
             color: $header-prim-color;
         }
-
     }
     .newsletter-form{
         display: flex;
@@ -82,9 +81,8 @@
 
          }
     }
-    
-
 }
+
 .navlinks{
     margin:10px 0px;
     display: flex;
@@ -102,7 +100,6 @@
         display: flex;
         flex-direction: column;
         gap:16px;
-
     }
 }
 a{

@@ -1,6 +1,5 @@
 .box{
-    //display: flex;
-    // justify-content: centers;//
+    
     @include tablet{
         max-width: 871px;
         position: relative;
@@ -26,7 +25,6 @@
 
     &__desc{
         padding: 36px 41px 36px 36px;
-        // border: 2px solid black;
         background: white;
         max-width: 430px;
         box-sizing: border-box;
