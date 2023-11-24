@@ -1,0 +1,46 @@
+.footer{
+    .footinfo{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0px;
+
+        p{
+            color: $header-para-color;
+        }
+
+        .rights{
+            order: 3;
+            @include tablet{
+                order: 1;
+            }
+        }
+        .privacy{
+            order: 2;
+            @include tablet{
+                order:2;
+            }
+        }
+        .icons{
+            order: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 15%;
+            @include tablet{
+                order:3;
+            }
+        }
+    }
+
+    .bigline{
+        display: none;
+        @include tablet{
+                width: 100%;
+                display: flex;
+        }
+        @include desktop{
+                width: 100%;
+                display: flex;
+        }
+    }
+
+}

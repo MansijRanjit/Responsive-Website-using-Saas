@@ -1,0 +1,110 @@
+.bottomcontent
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 40px 0px;
+
+    @include tablet{
+        gap: 86px;
+        justify-content: center;
+    }
+    @include desktop{
+        gap: 250px;
+    }
+
+}
+
+.subscribe{
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+
+    @include tablet{
+        max-width: 481px;
+        background: var(--Text, #1D1C31);
+        box-shadow: 0px 0px 30px 2px rgba(93, 85, 255, 0.10) inset;
+        padding: 24px 24px;
+    }
+
+    h1{
+        font-size: 20px;
+        @include tablet{
+            color: $header-prim-color;
+        }
+    }
+    p{
+        font-size: 14px;
+        margin-top: 24px;
+        margin-bottom: 16.2px;
+        @include tablet{
+            color: $header-prim-color;
+        }
+
+    }
+    .newsletter-form{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+    }
+    .email{
+        max-width: 330px;
+        .emailBox{
+            border: none;
+            @include tablet{
+                background: var(--Text, #1D1C31);
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+        @include tablet{
+            max-width: 433px;
+         }
+    }
+
+    .emailBtn{
+        width: 192px;
+        padding: 10px 24px;
+        align-items: center;
+        font-size: $para-font-size;
+        color: $header-para-color;
+        cursor: pointer;
+
+        background: var(--4-e-46-e-8, #4E46E8);
+        border-radius: 8px;
+
+        @include tablet{
+            color: var(--Text, #1D1C31);
+            background: $header-prim-color;
+
+         }
+    }
+    
+
+}
+.navlinks{
+    margin:10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    h1{
+        font-size: 20px;
+    }
+    .menulinks{
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+    .helplinks{
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+
+    }
+}
+a{
+    color: $header-para-color;
+}

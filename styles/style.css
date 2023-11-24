@@ -661,7 +661,7 @@ header {
 }
 
 .card {
-  border: 1px solid rgb(219, 187, 187);
+  border: 1px solid rgba(29, 28, 49, 0.1);
   border-radius: 8px;
   width: 304px;
   display: flex;
@@ -692,22 +692,6 @@ header {
   margin-top: 18px;
 }
 
-.box__img {
-  max-width: 430px;
-}
-.box__img img {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .box__img {
-    max-width: 790px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .box__img {
-    max-width: 1168px;
-  }
-}
 @media screen and (min-width: 768px) {
   .box {
     max-width: 871px;
@@ -719,6 +703,22 @@ header {
     max-width: 1408px;
     position: relative;
   }
+}
+.box__img {
+  max-width: 430px;
+}
+@media screen and (min-width: 768px) {
+  .box__img {
+    max-width: 790px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box__img {
+    max-width: 1168px;
+  }
+}
+.box__img img {
+  width: 100%;
 }
 .box__desc {
   padding: 36px 41px 36px 36px;
@@ -795,7 +795,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 245px;
+    margin-top: 100px;
     margin-bottom: 50px;
     gap: 40px;
   }
@@ -818,7 +818,7 @@ header {
 }
 
 .revCard {
-  border: 1px solid rgb(209, 194, 194);
+  border: 1px solid rgba(29, 28, 49, 0.1);
   border-radius: 8px;
   width: 304px;
   display: flex;
@@ -856,6 +856,172 @@ header {
 }
 .revCard1 h1 {
   color: #FFF;
+}
+
+.footer .footinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+.footer .footinfo p {
+  color: #B6B3EB;
+}
+.footer .footinfo .rights {
+  order: 3;
+}
+@media screen and (min-width: 768px) {
+  .footer .footinfo .rights {
+    order: 1;
+  }
+}
+.footer .footinfo .privacy {
+  order: 2;
+}
+@media screen and (min-width: 768px) {
+  .footer .footinfo .privacy {
+    order: 2;
+  }
+}
+.footer .footinfo .icons {
+  order: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 15%;
+}
+@media screen and (min-width: 768px) {
+  .footer .footinfo .icons {
+    order: 3;
+  }
+}
+.footer .bigline {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer .bigline {
+    width: 100%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .bigline {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.bottomcontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 40px 0px;
+}
+@media screen and (min-width: 768px) {
+  .bottomcontent {
+    gap: 86px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bottomcontent {
+    gap: 250px;
+  }
+}
+
+.subscribe {
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    max-width: 481px;
+    background: var(--Text, #1D1C31);
+    box-shadow: 0px 0px 30px 2px rgba(93, 85, 255, 0.1) inset;
+    padding: 24px 24px;
+  }
+}
+.subscribe h1 {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe h1 {
+    color: #FFF;
+  }
+}
+.subscribe p {
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 16.2px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe p {
+    color: #FFF;
+  }
+}
+.subscribe .newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.subscribe .email {
+  max-width: 330px;
+}
+.subscribe .email .emailBox {
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .subscribe .email .emailBox {
+    background: var(--Text, #1D1C31);
+  }
+}
+.subscribe .email img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .subscribe .email {
+    max-width: 433px;
+  }
+}
+.subscribe .emailBtn {
+  width: 192px;
+  padding: 10px 24px;
+  align-items: center;
+  font-size: 14px;
+  color: #B6B3EB;
+  cursor: pointer;
+  background: var(--4-e-46-e-8, #4E46E8);
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe .emailBtn {
+    color: var(--Text, #1D1C31);
+    background: #FFF;
+  }
+}
+
+.navlinks {
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+.navlinks h1 {
+  font-size: 20px;
+}
+.navlinks .menulinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.navlinks .helplinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+a {
+  color: #B6B3EB;
 }
 
 /*# sourceMappingURL=style.css.map */
